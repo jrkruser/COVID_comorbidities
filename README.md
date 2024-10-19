@@ -80,6 +80,4 @@ These tables were generated from SQL queries and then exported as `.csv` files f
 ## Contributing
 This project is a work in progress. Contributions are welcome, whether through additional analysis, improvements in code, or new visualizations. Feel free to submit issues or pull requests!
 
-## License
-This project is licensed under the MIT License.
 

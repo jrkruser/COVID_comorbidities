@@ -77,7 +77,4 @@ These tables were generated from SQL queries and then exported as `.csv` files f
 - Consider further exploration into mental health conditions and their role in COVID-19 outcomes.
 - Explore potential confounding factors like socioeconomic status and other health disparities.
 
-## Contributing
-This project is a work in progress. Contributions are welcome, whether through additional analysis, improvements in code, or new visualizations. Feel free to submit issues or pull requests!
-
 

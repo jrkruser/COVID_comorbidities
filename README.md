@@ -7,6 +7,12 @@ This repository contains a data analysis project focused on understanding the re
     <img src="images/database.png" alt="Database Symbol" width="100" style="margin-left: 20px;" />
 </div>
 
+<div align="center">
+    <img src="images/stats.png" alt="Person with Stats" width="100" style="margin-right: 100px;" />
+    <img src="images/database.png" alt="Database Symbol" width="100" style="margin-left: 100px;" />
+</div>
+
+
 
 ## Project Overview
 

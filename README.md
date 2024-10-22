@@ -47,15 +47,18 @@ The following views are queried directly from the database using SQLAlchemy:
 
 2. **Python & SQLAlchemy:**
    - SQLAlchemy is used to create connections to the PostgreSQL database.
-   - Queries are run to load data from the views directly into Pandas DataFrames for analysis.
+   - Queries are run to load data from the views into Pandas DataFrames.
+   - The DataFrames are then saved as CSV files for analysis.
 
-3. **Notebook:** The code for data extraction and analysis is available in the notebook `postgresql_data_extraction.ipynb`.
+3. **CSV Files:** The CSV files are loaded in a separate analysis notebook where further merging, cleaning, and analysis are performed.
 
 ## Analysis Outline
 
 ### Loading and Merging Datasets
-- Merge `v_covid_occurrences` with `v_covid_person` for unified demographic and occurrence data.
-- Load and merge comorbidities and death data for further analysis.
+- The first two data tables were loaded in and inspected
+- Load `df_occurrences` (from `v_covid_occurrences`) and `df_person` (from `v_covid_person`) CSV files
+- Merge `df_comorbidities` and `df_deaths` CSV files for further analysis.
+
 
 ### Exploring Demographics
 - Visualize and explore demographic data: age, gender, ethnicity, and race.

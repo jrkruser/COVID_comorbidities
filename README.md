@@ -4,7 +4,7 @@ This repository contains a data analysis project focused on understanding the re
 
 <div align="center">
     <img src="images/stats.png" alt="Person with Stats" width="200" style="margin-right: 400px;" />
-    <img src="images/database.png" alt="Database Symbol" width="200" style="margin-left: 20px;" />
+    <img src="images/database.png" alt="Database Symbol" width="200" style="margin-left: 4000px;" />
 </div>
 
 

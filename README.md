@@ -12,43 +12,40 @@ In this project, we analyze:
 
 This is a work in progress, and the analysis will continue to evolve as more insights are discovered.
 
-## Data Acquisition
+## Data Retrieval
 
 ### Source of Data
-The data was acquired from a course-provided database built on the OMOP Common Data Model, populated with synthetic healthcare data from Synthea.
+The data is retrieved from a PostgreSQL database built on the OMOP Common Data Model, populated with synthetic healthcare data from Synthea. We use **SQLAlchemy** to query the database and retrieve data for analysis.
 
-### Tables Used:
-- `covid_occurrences.csv`: Isolates the first COVID-19 diagnosis for each patient.
-- `covid_person.csv`: Contains demographic data (age, gender, race, etc.) for patients diagnosed with COVID-19.
-- `covid_comorbidities.csv`: Lists ongoing conditions present before or during COVID-19 diagnosis.
-- `covid_deaths.csv`: Records all deaths among patients diagnosed with COVID-19.
-- `covid_drug_exposures.csv`: Captures drug treatments administered during COVID diagnosis.
-- `covid_procedures.csv`: Captures medical procedures performed during the COVID-19 diagnosis period.
+### Views Used:
+The following views are queried directly from the database using SQLAlchemy:
+- `v_covid_occurrences`: Contains the first COVID-19 diagnosis for each patient.
+- `v_covid_person`: Contains demographic data (age, gender, race, etc.) for patients diagnosed with COVID-19.
+- `v_covid_comorbidities`: Lists ongoing conditions present before or during COVID-19 diagnosis.
+- `v_covid_deaths`: Records all deaths among patients diagnosed with COVID-19.
+- `v_covid_drug_exposures`: Captures drug treatments administered during COVID diagnosis.
+- `v_covid_procedures`: Captures medical procedures performed during the COVID-19 diagnosis period.
 
-These tables were generated from SQL queries and then exported as `.csv` files for further analysis.
+All data is directly loaded into Pandas DataFrames using SQLAlchemy, allowing for seamless integration into our analysis workflow.
 
 ## Structure
 
-### Data Acquisition
-1. **SQL Queries:** SQL code to acquire and process the necessary data from the course database is stored in `data_acquisition_overview.ipynb`.
+### Data Extraction
+1. **SQL Queries and Views:** The data is retrieved from PostgreSQL views that pre-process the necessary information for analysis.
    - Isolating COVID-19 occurrences.
-   - Extracting demographic data (`covid_person`).
-   - Extracting comorbidities, death records, and related conditions (`covid_comorbidities`, `covid_deaths`).
-   
-2. **CSV Files:**
-   - `covid_occurrences.csv`
-   - `covid_person.csv`
-   - `covid_comorbidities.csv`
-   - `covid_deaths.csv`
-   - `covid_drug_exposures.csv`
-   - `covid_procedures.csv`
+   - Extracting demographic data from `v_covid_person`.
+   - Extracting comorbidities, death records, and related conditions (`v_covid_comorbidities`, `v_covid_deaths`).
 
-3. **Notebook:** The code for processing these datasets is available in the notebook `covid_analysis.ipynb`.
+2. **Python & SQLAlchemy:**
+   - SQLAlchemy is used to create connections to the PostgreSQL database.
+   - Queries are run to load data from the views directly into Pandas DataFrames for analysis.
+
+3. **Notebook:** The code for data extraction and analysis is available in the notebook `postgresql_data_extraction.ipynb`.
 
 ## Analysis Outline
 
 ### Loading and Merging Datasets
-- Merge `covid_occurrences` with `covid_person` for unified demographic and occurrence data.
+- Merge `v_covid_occurrences` with `v_covid_person` for unified demographic and occurrence data.
 - Load and merge comorbidities and death data for further analysis.
 
 ### Exploring Demographics
@@ -76,5 +73,3 @@ These tables were generated from SQL queries and then exported as `.csv` files f
 - Investigate findings such as increased prevalence of appendicitis and substance abuse in the deceased population.
 - Consider further exploration into mental health conditions and their role in COVID-19 outcomes.
 - Explore potential confounding factors like socioeconomic status and other health disparities.
-
-

@@ -1,4 +1,4 @@
-# COVID-19 Comorbidities Analysis
+# COVID-19 Comorbidities Analysis 
 
 This repository contains a data analysis project focused on understanding the relationship between pre-existing comorbidities and COVID-19 outcomes, using synthetic healthcare data from [Synthea](https://synthetichealth.github.io/synthea/). The analysis aims to identify common comorbidities in COVID-19 patients and determine their influence on outcomes such as death or hospitalization.
 

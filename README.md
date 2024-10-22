@@ -4,11 +4,13 @@ This repository contains a data analysis project focused on understanding the re
 
 ## Project Overview
 
-In this project, we analyze:
-- The demographic structure of COVID-19 patients.
-- Common comorbidities and their distribution across different age groups.
-- Differences in the prevalence of comorbidities between survivors and non-survivors.
-- Statistically significant relationships between comorbidities and death using the Chi-Square test.
+In this project, we:
+- Manage OMOP data in a PostgreSQL database
+- Build and retrieve customized views of relevant data
+- Explore demographic structure of COVID-19 patients.
+- Analyze common comorbidities and their distribution across different age groups.
+- Ivestigate differences in the prevalence of comorbidities between survivors and non-survivors.
+- Determine statistically significant relationships between comorbidities and death using the Chi-Square test.
 
 This is a work in progress, and the analysis will continue to evolve as more insights are discovered.
 

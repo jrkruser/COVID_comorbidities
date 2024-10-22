@@ -4,10 +4,8 @@ This repository contains a data analysis project focused on understanding the re
 
 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
     <img src="images/stats.png" alt="Person with Stats" width="100" style="margin-left: 10%;" />
-    <img src="images/database.png" alt="Database Symbol" width="100" style="margin-right: 10%;" />
+    <img src="images/database.png" alt="Database Symbol" width="100" style="margin-right: 10%; margin-left: 20%;" />
 </div>
-
-
 
 ## Project Overview
 

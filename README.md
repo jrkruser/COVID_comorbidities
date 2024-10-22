@@ -2,6 +2,8 @@
 
 This repository contains a data analysis project focused on understanding the relationship between pre-existing comorbidities and COVID-19 outcomes, using synthetic healthcare data from [Synthea](https://synthetichealth.github.io/synthea/). The analysis aims to identify common comorbidities in COVID-19 patients and determine their influence on outcomes such as death or hospitalization.
 
+<div style="width: 100%;">
+    <div style="float: left; width: 33%; text-align: center;">
         <img src="images/stats.png" alt="Person with Stats" width="100" />
     </div>
     <div style="float: left; width: 33%; text-align: center;">
@@ -12,6 +14,7 @@ This repository contains a data analysis project focused on understanding the re
     </div>
     <div style="clear: both;"></div>
 </div>
+
 
 ## Project Overview
 

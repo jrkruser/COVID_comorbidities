@@ -59,12 +59,6 @@ The following views are queried directly from the database using SQLAlchemy:
 - Load `df_occurrences` (from `v_covid_occurrences`) and `df_person` (from `v_covid_person`) CSV files
 - Merge `df_comorbidities` and `df_deaths` CSV files for further analysis.
 
-<div align="center">
-    <img src="images/occurrences.png" alt="Occurrences info" width="400" style="margin-right: 20px;" />
-    <img src="images/people.png" alt="Persons info" width="200" style="margin-left: 20px;" />
-</div>
-
-
 ### Exploring Demographics
 - Visualize and explore demographic data: age, gender, ethnicity, and race.
 - Group patients by age ranges (e.g., 30-39, 40-49) for better comparison.

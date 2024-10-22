@@ -26,7 +26,6 @@ The following views are queried directly from the database using SQLAlchemy:
 - `v_covid_drug_exposures`: Captures drug treatments administered during COVID diagnosis.
 - `v_covid_procedures`: Captures medical procedures performed during the COVID-19 diagnosis period.
 
-All data is directly loaded into Pandas DataFrames using SQLAlchemy, allowing for seamless integration into our analysis workflow.
 
 ## Structure
 

@@ -62,8 +62,6 @@ Sample SQL:
 - Visualize and explore demographic data: age, gender, ethnicity, and race.
 - Group patients by age ranges (e.g., 30-39, 40-49) for better comparison.
 
-![Deaths by Age Group](images/deathsbyagegroup.png)
-
 ### Comorbidity Analysis
 - Explore the most common comorbidities present in the COVID-19 positive population.
 - Filter and clean redundant or flawed conditions (e.g., diabetes or miscarriage).
@@ -73,6 +71,8 @@ Sample SQL:
 ### Mortality Analysis
 - Explore the death data, removing duplicates and non-COVID related deaths.
 - Visualize deaths across different age groups.
+
+![Deaths by Age Group](images/deathsbyagegroup.png)
 
 ### Statistical Testing
 - Use Chi-Square tests to compare the prevalence of comorbidities in the general COVID-19 positive population and those who passed away.

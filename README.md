@@ -7,9 +7,6 @@ This repository contains a data analysis project focused on understanding the re
     <img src="images/database.png" alt="Database Symbol" width="200" style="margin-left: 20px;" />
 </div>
 
-
-
-
 ## Project Overview
 
 In this project, we:
@@ -17,7 +14,7 @@ In this project, we:
 - Build and retrieve customized views of relevant data
 - Explore demographic structure of COVID-19 patients.
 - Analyze common comorbidities and their distribution across different age groups.
-- Ivestigate differences in the prevalence of comorbidities between survivors and non-survivors.
+- Investigate differences in the prevalence of comorbidities between survivors and non-survivors.
 - Determine statistically significant relationships between comorbidities and death using the Chi-Square test.
 
 This is a work in progress, and the analysis will continue to evolve as more insights are discovered.
@@ -27,6 +24,8 @@ This is a work in progress, and the analysis will continue to evolve as more ins
 ### Source of Data
 The data is retrieved from a PostgreSQL database built on the OMOP Common Data Model, populated with synthetic healthcare data from Synthea. We use **SQLAlchemy** to query the database and retrieve data for analysis.
 
+![Sample SQL](images/samplesql.png)
+
 ### Views Used:
 The following views are queried directly from the database using SQLAlchemy:
 - `v_covid_occurrences`: Contains the first COVID-19 diagnosis for each patient.
@@ -35,7 +34,6 @@ The following views are queried directly from the database using SQLAlchemy:
 - `v_covid_deaths`: Records all deaths among patients diagnosed with COVID-19.
 - `v_covid_drug_exposures`: Captures drug treatments administered during COVID diagnosis.
 - `v_covid_procedures`: Captures medical procedures performed during the COVID-19 diagnosis period.
-
 
 ## Structure
 
@@ -63,9 +61,13 @@ The following views are queried directly from the database using SQLAlchemy:
 - Visualize and explore demographic data: age, gender, ethnicity, and race.
 - Group patients by age ranges (e.g., 30-39, 40-49) for better comparison.
 
+![Deaths by Age Group](images/deathsbyagegroup.png)
+
 ### Comorbidity Analysis
 - Explore the most common comorbidities present in the COVID-19 positive population.
 - Filter and clean redundant or flawed conditions (e.g., diabetes or miscarriage).
+
+![Most Common Comorbidities](images/mostcommoncomor.png)
 
 ### Mortality Analysis
 - Explore the death data, removing duplicates and non-COVID related deaths.
@@ -74,6 +76,9 @@ The following views are queried directly from the database using SQLAlchemy:
 ### Statistical Testing
 - Use Chi-Square tests to compare the prevalence of comorbidities in the general COVID-19 positive population and those who passed away.
 - Identify statistically significant differences between these two groups.
+
+![Relative Difference by Group](images/relativedifferencebygroup.png)
+![Relative Difference Test Table](images/relativedifferencetesttable.png)
 
 ### Visualizations
 - Bar plots and comparisons showing comorbidity prevalence in the general population vs. the deceased population.

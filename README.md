@@ -24,8 +24,6 @@ This is a work in progress, and the analysis will continue to evolve as more ins
 ### Source of Data
 The data is retrieved from a PostgreSQL database built on the OMOP Common Data Model, populated with synthetic healthcare data from Synthea. We use **SQLAlchemy** to query the database and retrieve data for analysis.
 
-![Sample SQL](images/samplesql.png)
-
 ### Views Used:
 The following views are queried directly from the database using SQLAlchemy:
 - `v_covid_occurrences`: Contains the first COVID-19 diagnosis for each patient.
@@ -34,6 +32,9 @@ The following views are queried directly from the database using SQLAlchemy:
 - `v_covid_deaths`: Records all deaths among patients diagnosed with COVID-19.
 - `v_covid_drug_exposures`: Captures drug treatments administered during COVID diagnosis.
 - `v_covid_procedures`: Captures medical procedures performed during the COVID-19 diagnosis period.
+
+Sample SQL:
+![Sample SQL](images/samplesql.png)
 
 ## Structure
 

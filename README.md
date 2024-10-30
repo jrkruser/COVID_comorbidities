@@ -77,13 +77,13 @@ Sample SQL:
 ### Statistical Testing
 - Use Chi-Square tests to compare the prevalence of comorbidities in the general COVID-19 positive population and those who passed away.
 - Identify statistically significant differences between these two groups.
-
-![Relative Difference by Group](images/relativedifferencebygroup.png)
+  
+Some of the most significant comorbidities:
 ![Relative Difference Test Table](images/relativedifferencetesttable.png)
 
-### Visualizations
-- Bar plots and comparisons showing comorbidity prevalence in the general population vs. the deceased population.
-- Visualizations of age distributions and comorbidity distributions across age groups.
+Significant comorbidities plotted with relative difference between deceased group and population:
+![Relative Difference by Group](images/relativedifferencebygroup.png)
+
 
 ## Future Work
 - Incorporate medication and procedure data into the analysis to explore their impact on COVID-19 outcomes.

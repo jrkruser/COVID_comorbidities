@@ -66,6 +66,9 @@ Sample SQL:
 - Explore the most common comorbidities present in the COVID-19 positive population.
 - Filter and clean redundant or flawed conditions (e.g., diabetes or miscarriage).
 
+/n
+
+The most common conditions in each age group by percentage:
 ![Most Common Comorbidities](images/mostcommoncomor.png)
 
 ### Mortality Analysis

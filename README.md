@@ -62,7 +62,7 @@ Sample SQL:
 - Visualize and explore demographic data: age, gender, ethnicity, and race.
 - Group patients by age ranges (e.g., 30-39, 40-49) for better comparison.
 
-![Demographic Visualizations](images/coviddemographics.png)
+![Demographic Visualizations](images/covid%20demographics.png)
 
 
 ### Comorbidity Analysis

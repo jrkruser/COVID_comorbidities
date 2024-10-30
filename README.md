@@ -66,7 +66,6 @@ Sample SQL:
 - Explore the most common comorbidities present in the COVID-19 positive population.
 - Filter and clean redundant or flawed conditions (e.g., diabetes or miscarriage).
 
-/n
 
 The most common conditions in each age group by percentage:
 ![Most Common Comorbidities](images/mostcommoncomor.png)
@@ -76,6 +75,7 @@ The most common conditions in each age group by percentage:
 - Visualize deaths across different age groups.
 
 ![Deaths by Age Group](images/deathsbyagegroup.png)
+
 
 ### Statistical Testing
 - Use Chi-Square tests to compare the prevalence of comorbidities in the general COVID-19 positive population and those who passed away.

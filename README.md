@@ -62,6 +62,9 @@ Sample SQL:
 - Visualize and explore demographic data: age, gender, ethnicity, and race.
 - Group patients by age ranges (e.g., 30-39, 40-49) for better comparison.
 
+![Demographic Visualizations](images/coviddemographics.png)
+
+
 ### Comorbidity Analysis
 - Explore the most common comorbidities present in the COVID-19 positive population.
 - Filter and clean redundant or flawed conditions (e.g., diabetes or miscarriage).
